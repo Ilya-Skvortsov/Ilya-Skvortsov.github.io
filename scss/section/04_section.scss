@@ -1,0 +1,154 @@
+.satrt {
+
+		&__body {
+         display: flex;
+         flex-direction: row;
+         justify-content: center;
+         align-items: center;
+         margin: auto;
+         height: 742px;
+         padding: 0 50px;
+         padding-bottom: 150px;
+
+         @media only screen and (max-width: 1023px) {
+            flex-wrap: wrap;
+         }
+
+         @media only screen and (max-width: 700px) {
+            padding: 0;
+         }
+		}
+}
+.column3:first-child {
+   flex-direction: column;
+   justify-content: center;
+   align-items: flex-start;
+   width: 550 / 1675 * 100%;
+   padding-right: 50px;
+
+   @media only screen and (max-width: 1023px) {
+      width: auto;
+      max-width: 550px;
+      padding-bottom: 150px;
+      padding-right: 0;
+   }
+
+   @media only screen and (max-width: 700px) {
+            padding: 0 50px;
+            padding-bottom: 100px;
+         }
+
+      & h2 {
+         @extend %tpl_h2;
+      }
+      
+      & h1 {
+         @extend %tpl_h1;
+         color: rgb(16, 24, 31);
+      }
+
+      & span {
+         @extend %tpl_span;
+      }
+
+      & p {
+         @extend %tpl_p;
+         color: rgb(47, 47, 47);
+      }
+}
+.column3:last-child {
+   max-width: 886 / 1675 * 100%;
+   position: relative;
+
+   @media only screen and (max-width: 1023px) {
+      max-width: 886px;
+      margin-bottom: 150px;
+   }
+}
+.background {
+   max-width: 100%;
+   justify-content: center;
+   align-items: center;
+   z-index: 100;
+   background: transparent;
+   position: relative;
+   pointer-events: none;
+
+      & img {
+         max-width: 100%;
+         object-fit: cover;
+         z-index: 100;
+         background: transparent;
+
+      }
+}
+
+.owl-carousel {
+   max-width: 345 / 886 * 100%;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-62%, -50%);
+   z-index: 99;
+}
+
+.owl-carousel, .owl-carousel .owl-item {
+   background-color: white;
+}
+
+.owl-carousel .owl-stage-outer {
+   background-color: white;
+}
+
+.owl-dots {
+		counter-reset: slides-num; /* Initialize counter. */ 
+      position: absolute;
+      top: 0;
+      right: 0;
+	}
+
+	.owl-dot {
+      display: inline-block;
+		counter-increment: slides-num; /* Increment counter */
+      margin-right: 5px;
+
+		span {
+			display: none;
+		}
+
+		&.active {
+
+			&:before {
+				content: "0"counter(slides-num);
+				display: inline-block;
+				vertical-align: middle;
+            position: absolute;
+            left: 0;
+            top: 0;
+            font-size: 102px;
+            letter-spacing: -5px;
+            line-height: 102px;
+            color: #934499;
+            font-family: "Gotham Pro";
+            font-weight: bold;
+            z-index: -1;
+            
+            @media only screen and (max-width: 750px) {
+               font-size: 70px;
+               top: -20px;
+            }
+            @media only screen and (max-width: 550px) {
+               font-size: 60px;
+               top: -30px;
+            }
+			}
+		}
+	}
+
+.image {
+   max-width: 100%;
+      & img {
+         max-width: 100%;
+         object-fit: cover;
+      }
+}

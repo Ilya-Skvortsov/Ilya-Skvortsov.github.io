@@ -1,0 +1,118 @@
+.benefits {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   background: url("../img/section_3/background.png") no-repeat;
+   background-size: cover;
+   background-position: 50% 50%;
+      
+   &__body {
+         padding: 0 355px;
+         padding-bottom: 250px;
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+
+         @media only screen and (max-width: 2000px) {
+            padding: 100px 250px 150px 250px;
+         }
+
+         @media only screen and (max-width: 1650px) {
+            padding: 100px 150px 150px 150px;
+         }
+
+         @media only screen and (max-width: 1650px) {
+            padding: 100px 100px 150px 100px;
+         }
+
+         @media only screen and (max-width: 1250px) {
+            padding: 20px 50px 150px 50px;
+         }
+         @media only screen and (max-width: 650px) {
+            padding: 150px 50px 150px 50px;
+         }
+		}
+
+		&__heading {
+         & h1 {
+         @extend %tpl_h1;
+         color: rgb(16, 24, 31);
+
+         @media only screen and (max-width: 1023px) {
+            padding-bottom: 0;
+         }
+
+         @media only screen and (max-width: 1023px) {
+            padding-bottom: 50px;
+         }
+
+         }
+
+         & span {
+            @extend %tpl_span;
+         }
+		}
+}
+.benefit {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+.content {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+   align-items: center;
+   flex-wrap: wrap;
+}
+
+.benefit {
+   max-width: 290px;
+   padding: 50px 100px;
+
+      @media only screen and (min-width: 2650px) {
+         padding: 50px 150px;
+      }
+
+      @media only screen and (max-width: 2200px) {
+         padding: 25px 50px;
+      }
+
+      @media only screen and (max-width: 1250px) {
+         padding: 25px;
+      }
+
+      @media only screen and (max-width: 1023px) {
+         padding: 25px 50px;
+      }
+
+      @media only screen and (max-width: 850px) {
+         max-width: 200px;
+         padding: 25px;
+      }
+
+      @media only screen and (max-width: 600px) {
+         max-width: 150px;
+      }
+
+      @media only screen and (max-width: 500px) {
+         max-width: 250px;
+      }
+   
+
+   & img {
+      max-width: 100%;
+      padding: 20px 40px;
+
+   }
+
+   & p {
+      @extend %tpl_p;
+      color: rgb(47, 47, 47);
+      text-align: center;
+      padding: 0;
+   }
+}

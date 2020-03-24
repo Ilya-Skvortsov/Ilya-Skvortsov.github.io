@@ -1,0 +1,190 @@
+%tpl_span {
+   font-size: 82px;
+   letter-spacing: -4px;
+   line-height: 82px;
+   font-family: "Gotham Pro";
+   font-weight: bold;
+   text-transform: uppercase;
+
+      @media only screen and (max-width: 2300px){
+         font-size: 60px;
+         letter-spacing: -4px;
+         line-height: 60px;
+         font-family: "Gotham Pro";
+         font-weight: bold;
+         text-transform: uppercase;
+      }
+
+      @media only screen and (max-width: 1800px){
+         font-size: 50px;
+         letter-spacing: -4px;
+         line-height: 50px;
+         font-family: "Gotham Pro";
+         font-weight: bold;
+         text-transform: uppercase;
+      }
+
+      @media only screen and (max-width: 1500px){
+         font-size: 45px;
+         letter-spacing: -4px;
+         line-height: 45px;
+         font-family: "Gotham Pro";
+         font-weight: bold;
+         text-transform: uppercase;
+      }
+
+      @media only screen and (max-width: 1300px){
+         font-size: 35px;
+         letter-spacing: -4px;
+         line-height: 35px;
+         font-family: "Gotham Pro";
+         font-weight: bold;
+         text-transform: uppercase;
+      }
+
+      @media only screen and (max-width: 415px){
+         font-size: 30px;
+         letter-spacing: -4px;
+         line-height: 30px;
+         font-family: "Gotham Pro";
+         font-weight: bold;
+         text-transform: uppercase;
+      }
+}
+
+%tpl_h1 {
+   font-size: 82px;
+   letter-spacing: -4px;
+   line-height: 82px;
+   font-family: "Gotham Pro";
+   font-weight: 300;
+   padding-bottom: 75px;
+   text-transform: uppercase;
+
+      @media only screen and (min-width: 2300px){
+         font-size: 60px;
+         letter-spacing: -4px;
+         line-height: 60px;
+         font-family: "Gotham Pro";
+         font-weight: 300;
+         padding-bottom: 75px;
+         text-transform: uppercase;
+      }
+      @media only screen and (max-width: 2300px){
+         font-size: 50px;
+         letter-spacing: -4px;
+         line-height: 50px;
+         font-family: "Gotham Pro";
+         font-weight: 300;
+         padding-bottom: 75px;
+         text-transform: uppercase;
+      }
+
+      @media only screen and (max-width: 1700px){
+         font-size: 45px;
+            letter-spacing: -4px;
+            line-height: 45px;
+            font-family: "Gotham Pro";
+            font-weight: 300;
+            padding-bottom: 50px;
+            text-transform: uppercase;
+      }
+      @media only screen and (max-width: 1500px){
+         font-size: 35px;
+            letter-spacing: -4px;
+            line-height: 35px;
+            font-family: "Gotham Pro";
+            font-weight: 300;
+            padding-bottom: 30px;
+            text-transform: uppercase;
+      }
+      @media only screen and (max-width: 415px){
+         font-size: 30px;
+            letter-spacing: -4px;
+            line-height: 30px;
+            font-family: "Gotham Pro";
+            font-weight: 300;
+            padding-bottom: 30px;
+            text-transform: uppercase;
+      }
+}
+%tpl_h2 {
+   font-size: 27px;
+   letter-spacing: 5px;
+   color: rgb(133, 67, 153);
+   font-family: "Open Sans";
+   font-weight: 600;
+   padding-bottom: 30px;
+   text-transform: uppercase;
+
+      @media only screen and (max-width: 1300px){
+         font-size: 18px;
+         letter-spacing: 5px;
+         color: rgb(133, 67, 153);
+         font-family: "Open Sans";
+         font-weight: 600;
+         padding-bottom: 30px;
+         text-transform: uppercase;
+      }
+}
+
+%tpl_p {
+   font-size: 24px;
+   font-family: "Open Sans";
+   font-weight: 400;
+   padding-bottom: 75px;
+
+      @media only screen and (max-width: 1550px){
+         font-size: 16px;
+         font-family: "Open Sans";
+         font-weight: 400;
+         padding-bottom: 75px;
+      }
+
+      @media only screen and (max-width: 1500px){
+         font-size: 14px;
+         font-family: "Open Sans";
+         font-weight: 400;
+         padding-bottom: 30px;
+      }
+
+      @media only screen and (max-width: 415px){
+         font-size: 12px;
+         font-family: "Open Sans";
+         font-weight: 400;
+         padding-bottom: 30px;
+      }
+}
+
+@keyframes text-position {
+   0% {
+      transform: translateX(-500%) rotate(720deg);
+   }
+
+   100% {
+      transform: translateX(0);
+   }
+}
+
+.animated {
+   animation: text-position 1s linear 1 running forwards;
+}
+
+@keyframes text-bottom {
+   0% {
+      transform: translateY(500%);
+      opacity: 0.2;
+   }
+   50% {
+      transform: scale(2);
+   }
+
+   100% {
+      transform: translateY(0);
+      opacity: 1;
+      transform: scale(1);
+   }
+}
+.bottom_float {
+   animation: text-bottom 1s linear 1 running forwards;
+}
